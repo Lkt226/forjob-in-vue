@@ -6,15 +6,15 @@
 export default {
     data(){
         return{
-            todolist(){
+            todolist(request, response){
                 const list = {
                     item1: 1,
                     item2: 2,
                     item3: 3,
-
                 }
 
-                return list
+                response = JSON.stringify(list)
+                return response
             }
         }
     }
