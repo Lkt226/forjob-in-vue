@@ -1,9 +1,10 @@
-function todoList(request, response){
-    const teste = {
-        teste: 1
+
+export default {
+    todoList(request, response){
+        const teste = {
+            teste: 1
+        }
+    
+        response.json()
     }
-
-    response.json()
 }
-
-export default todoList
