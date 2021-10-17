@@ -12,6 +12,8 @@
   "dependencies": {
     "core-js": "^3.15.0",
     "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "net": "^1.0.2",
     "nuxt": "^2.15.7"
   },
   "devDependencies": {}
