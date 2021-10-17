@@ -5,6 +5,8 @@ export default {
             teste: 1
         }
     
-        response.json()
+        response.json({
+            teste
+        })
     }
 }
