@@ -27,12 +27,4 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [],
-
-  build: {
-    extend(config, {}) {
-      config.node = {
-        fs: 'empty'
-      }
-    }
-  },
 };
