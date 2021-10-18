@@ -35,7 +35,4 @@ export default {
       }
     }
   },
-  serverMiddleware: {
-    '/api' : '~/api/index.js',
-  },
 };
