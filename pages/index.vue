@@ -2,6 +2,7 @@
   <pre>
     <h1>Home</h1>
     <p>{{todoJson()}}</p>
+    <NuxtLink to="/api/todolist"> teste </NuxtLink>
   </pre>
 </template>
 <script>
