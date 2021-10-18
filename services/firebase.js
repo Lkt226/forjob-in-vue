@@ -1,5 +1,5 @@
 const axios = require('axios');
-const credentials = require('../crendential');
+const credentials = require('../noGIT/crendential');
   
 const utils = {
     baseUrl: 'https://for-ambient-default-rtdb.firebaseio.com',
