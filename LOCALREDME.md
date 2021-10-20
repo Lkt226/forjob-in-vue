@@ -2,13 +2,13 @@
 
 ## Sistema de conexão
 
-[] registrar nome
+[x] registrar nome
 
 ## Principal
 
 [] sistema de modulos
-**[] mostrar no grid os modulos listados
-**[] guardar id do modulo no formato de api
+**[x] mostrar no grid os modulos listados
+**[x] guardar id do modulo no formato de api
 **[] guardar configurações do modulo
 **[] adicionar um modulo
 \*\*[] deletar modulo
@@ -32,3 +32,22 @@
 **[] fazer contagem do tempo
 **[] resetar o tempo
 **[] pausar o tempo
+
+## API
+
+-Users
+--[user] / id do usuario
+---[nome] / nome do usuario
+---[application] / forjob
+
+----[item] / no caso do forjob um modulo: [modulo]\_[id]
+-----[id] / id do item/modulo para o usuario final
+-----[name] / nome do item/modulo
+-----[typeId] / id do item/modulo base
+-----[content] / conteúdo do item/modulo: exemplo lista de todos
+
+-Shop
+--[item] / modulo\_[id]
+---[typeId] / id do item/modulo
+---[content] / conteúdo do item
+---[path] / caminho do modelo
