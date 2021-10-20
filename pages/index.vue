@@ -7,7 +7,7 @@
 </template>
 <script>
 import Grid from '../components/partials/grid.vue'
-const user = require('../services/menager').name
+const user = require('../assets/services/menager').name
 
 export default {
   components:{

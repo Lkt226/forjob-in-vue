@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+button {
+  @apply p-1 pl-2 pr-2 text-gray-100 text-lg rounded-full;
+}
+
+input {
+  @apply text-lg font-bold border-b-2 min-w-max;
+}
+
+.icon-button {
+  @apply w-4 h-6;
+}
+
+.dinamic-button {
+  @apply p-1 pl-2 pr-2 rounded-full;
+}
