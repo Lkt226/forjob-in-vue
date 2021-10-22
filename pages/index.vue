@@ -1,13 +1,13 @@
 <template>
   <div>
     <h1>GRID</h1>
-    <h3> {{user}} </h3>
+    <h3> {{user().name}} </h3>
     <Grid/>
   </div>
 </template>
 <script>
 import Grid from '../components/partials/grid.vue'
-const user = require('../assets/services/menager').name
+const api = require('../assets/services/menager')
 
 export default {
   components:{
@@ -15,8 +15,20 @@ export default {
   },
   data(){
     return{
-      user
+      update: this.$forceUpdate(),
+      api(){ 
+        return api.user 
+      },
+      user(){
+        api.getUser().then(res =>{
+          if(res !== this.api()) this.update
+        })
+        return this.api()
+      }
     }
+  },
+  computed:{
+   
   }
 }
 </script>

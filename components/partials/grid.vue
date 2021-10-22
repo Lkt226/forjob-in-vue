@@ -6,7 +6,7 @@
 </template>
 
 <script>
-const user = require('../../assets/services/menager')
+const user = require('../../assets/services/menager').user
 
 export default {
   data(){

@@ -29,10 +29,6 @@ async function getUser() {
     return data
 }
 
-getUser()
-
-console.log(user)
-setTimeout(()=>{console.log(user)}, 1000)
-module.exports = user
+module.exports = {user, getUser}
 
 // Pegar online as infos. caminho: /users/user_jojisdm3165
