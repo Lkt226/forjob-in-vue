@@ -1,4 +1,4 @@
-const user = {
+let user = {
     name: 'lkt226',
     modules:{
         'todolist_19885sad15': {
@@ -22,4 +22,17 @@ const user = {
     }
 }
 
+async function getUser() {
+    const api = require('./global/api_editor')  
+    const data = await api.getDATA('/users/user_jojisdm3165')
+    user = data
+    return data
+}
+
+getUser()
+
+console.log(user)
+setTimeout(()=>{console.log(user)}, 1000)
 module.exports = user
+
+// Pegar online as infos. caminho: /users/user_jojisdm3165

@@ -15,5 +15,14 @@ input {
 }
 
 .dinamic-button {
-  @apply p-1 pl-2 pr-2 rounded-full;
+  @apply p-1 pl-2 pr-2;
+  border-radius: 0 100% 100% 100%;
+}
+.dinamic-button:hover {
+  @apply p-1 pl-2 pr-2;
+  border-radius: 100% 100% 100% 0;
+}
+
+.text-b-line {
+  @apply text-lg border-b-2;
 }
