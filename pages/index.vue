@@ -21,7 +21,10 @@ export default {
       },
       user(){
         api.getUser().then(res =>{
-          if(res !== this.api()) this.update
+          if(res !== this.api()) {
+            // this.$forceUpdate()
+            console.log(res, this.api())
+          }
         })
         return this.api()
       }
